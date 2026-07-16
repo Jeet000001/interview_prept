@@ -1,6 +1,11 @@
 import { BentoCard } from "@/components/BentoCard";
 import { CodeDemo } from "@/components/Code_Animation";
-import { GoldTitle, GrayTitle, SectionHeading, SectionLabel } from "@/components/reusables";
+import {
+  GoldTitle,
+  GrayTitle,
+  SectionHeading,
+  SectionLabel,
+} from "@/components/reusables";
 import { StarsBackgroundDemo } from "@/components/Star_background";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -109,8 +114,6 @@ const Page = () => {
         </div>
       </section>
 
-
-
       <section className="relative z-10 border-y border-white/10 py-14">
         <p className="text-center text-xs font-medium text-stone-600 tracking-widest uppercase mb-8">
           Interviewees landed roles at
@@ -129,7 +132,6 @@ const Page = () => {
           ))}
         </div>
       </section>
-
 
       <section className="relative z-10 py-28 max-w-5xl mx-auto px-6">
         <div className="text-center mb-16">
@@ -236,8 +238,6 @@ const Page = () => {
         </div>
       </section>
 
-
-      
       {/* ROLES */}
       <section className="relative z-10 pb-28 max-w-5xl mx-auto px-6">
         <div className="text-center mb-16">
@@ -280,7 +280,35 @@ const Page = () => {
         </div>
       </section>
 
-      
+      <section className="relative z-10 pb-28 max-w-5xl mx-auto px-6">
+        <div className="relative border border-amber-400/20 rounded-3xl px-3 sm:px-16 py-20 bg-linear-to-br from-amber-400/5 text-center overflow-hidden">
+          <StarsBackgroundDemo />
+
+          <h2 className="font-serif relative text-4xl md:text-5xl leading-tight tracking-tight mb-4">
+            <GrayTitle>Your next interview</GrayTitle>
+            <br />
+            <GoldTitle>starts here</GoldTitle>
+          </h2>
+
+          <p className="relative text-stone-400 font-light text-sm mb-11">
+            Join thousands of engineers already levelling up on Prept.
+          </p>
+
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Link href="/onboarding" className="relative">
+              <Button variant="gold" size="hero">
+                Get started
+              </Button>
+            </Link>
+
+            <Link href="/explore" className="relative">
+              <Button variant="outline" size="hero">
+                Browse Interviewers →
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
