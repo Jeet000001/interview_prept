@@ -13,3 +13,13 @@ export const SectionLabel = ({ children }: { children: React.ReactNode }) => (
     {children}
   </p>
 );
+
+export const SectionHeading = ({ gray, gold }) => (
+  <h2
+    className={`font-serif text-[clamp(2rem,4vw,3rem)] leading-[1.1] tracking-tight`}
+  >
+    <GrayTitle>{gray}</GrayTitle>
+    <br />
+    <GoldTitle>{gold}</GoldTitle>
+  </h2>
+);
