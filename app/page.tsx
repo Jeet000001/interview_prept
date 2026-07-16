@@ -1,5 +1,6 @@
 import { BentoCard } from "@/components/BentoCard";
 import { CodeDemo } from "@/components/Code_Animation";
+import PricingSection from "@/components/PricingSection";
 import {
   GoldTitle,
   GrayTitle,
@@ -278,6 +279,21 @@ const Page = () => {
             </div>
           ))}
         </div>
+      </section>
+
+      <section className="relative z-10 pb-28 max-w-5xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <SectionLabel>Pricing</SectionLabel>
+          <SectionHeading
+            gray="Simple, transparent"
+            gold="credit-based plans"
+          />
+          <p className="text-stone-400 mt-3 text-sm">
+            Each credit = one session. Unused credits roll over.
+          </p>
+        </div>
+
+        <PricingSection />
       </section>
 
       <section className="relative z-10 pb-28 max-w-5xl mx-auto px-6">
